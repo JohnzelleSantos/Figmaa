@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Fanteasy Menu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="logo"><i data-lucide="coffee"></i></span>Fanteasy</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    <nav class="nav" id="nav"><a href="index.html"><span class="t">Home</span><span class="m">Home</span></a><a href="about.html"><span class="t">About</span><span class="m">Story</span></a><a href="menu.html" aria-current="page"><span class="t">Menu</span><span class="m">Menu</span></a><a href="reservation.html"><span class="t">Reservation</span><span class="m">Reservation</span></a></nav>
+  </div>
+</header>
+<main>
+<section class="wrap menu">
+  <header class="center-head">
+    <p class="eyebrow center">Explore the menu</p>
+    <h1>The Fanteasy Menu</h1>
+    <p class="lead">Every blend and sweet is prepared with hand gathered organic ingredients. <span class="warn">Ask your server about allergies.</span></p>
+  </header>
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-show="all" role="tab">Signature Brews</button>
+    <button class="tab" data-show="cup" role="tab">Classics &amp; Infusions</button>
+    <button class="tab" data-show="sweets" role="tab">Bakery &amp; Sweets</button>
+  </div>
+  <div class="menu-grid">
+    <section class="group" data-group="cup"><h2>Cup of Potions</h2><article class="item"><div class="row"><h3>Enchanted Lavender Fog</h3><span class="price">Php 160</span></div><p>Smooth Earl Grey tea steeped with hand picked lavender flowers, vanilla bean nectar, and frothed oat milk.</p><div class="tags"><span>Calm</span><span>Floral</span></div></article><article class="item"><div class="row"><h3>Lavender Tea House Special</h3><span class="price">Php 170</span></div><p>A tea made with Chive Blossoms, lavender earl grey with cream or milk.</p><div class="tags"><span>Immunity</span><span>Tart</span></div></article><article class="item"><div class="row"><h3>Matcha Mint Mist</h3><span class="price">Php 150</span></div><p>Stone ground ceremonial green tea combined with cool fresh mint, coconut cream, and a splash of maple elixir.</p><div class="tags"><span>Energy</span><span>Fresh</span></div></article></section>
+    <section class="group" data-group="sweets"><h2>Spelled Sweets</h2><article class="item"><div class="row"><h3>Ube Dream Cheesecake</h3><span class="price">Php 130</span></div><p>Rich, creamy, and topped with a berry enchantment.</p><div class="tags"><span>Warm</span><span>Sweet</span></div></article><article class="item"><div class="row"><h3>Blue berry Macaron (3pc)</h3><span class="price">Php 100</span></div><p>Delicate rosewater meringue cookies filled with white chocolate cardamon ganache.</p><div class="tags"><span>Gluten-Free</span><span>Delicate</span></div></article><article class="item"><div class="row"><h3>Elderflower Cookie</h3><span class="price">Php 50</span></div><p>Crispy almond crust filled with creamy custard infused with fresh local Chive Blossoms.</p><div class="tags"><span>Fruit</span><span>Nutty</span></div></article></section>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p class="follow">Follow us on Social media:</p>
+    <p class="legal"><span class="brand-s">Fanteasy</span> &copy; 2026 &bull; All rights reserved to Santos, Johnzelle L.</p>
+    <div class="legal-links"><button type="button" data-modal="Privacy Policy">Privacy Policy</button><button type="button" data-modal="Terms of Service">Terms of Service</button></div>
+    <div class="social"><a href="https://www.facebook.com/johnzelle.santos" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a><a href="https://www.instagram.com/johnz_santos/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a></div>
+  </div>
+</footer>
+<dialog class="modal" id="modal"><h2 id="modal-title"></h2><p>Content has not been made yet since this is only for my finals requirement.</p><button class="btn primary" id="modal-close" type="button">Close</button></dialog>
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
