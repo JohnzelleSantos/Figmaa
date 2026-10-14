@@ -1,5 +1,9 @@
 lucide.createIcons();
 
+  //     Full Name: Santos Johnzelle L.
+  //     Section: WD-202
+  //     FANTEASY FIGMA CODE
+
 // mobile menu
 const btn = document.querySelector('.menu-btn');
 const nav = document.getElementById('nav');
