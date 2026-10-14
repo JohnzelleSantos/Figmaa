@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Make a Reservation | Fanteasy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="logo"><i data-lucide="coffee"></i></span>Fanteasy</a>
+    <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    <nav class="nav" id="nav"><a href="index.html"><span class="t">Home</span><span class="m">Home</span></a><a href="about.html"><span class="t">About</span><span class="m">Story</span></a><a href="menu.html"><span class="t">Menu</span><span class="m">Menu</span></a><a href="reservation.html" aria-current="page"><span class="t">Reservation</span><span class="m">Reservation</span></a></nav>
+  </div>
+</header>
+<main>
+<section class="wrap res">
+  <div class="res-intro">
+    <div class="res-head">
+      <p class="eyebrow center-d"><i data-lucide="sparkles"></i>Book your experience</p>
+      <h1>Make a Reservation</h1>
+      <p class="lead">Reserve your table and step into a world of fantasy. We can't wait to serve you a cup of magic.</p>
+    </div>
+    <div class="res-img"><img src="as.jpg" alt="Lavender tea being poured into a dark ceramic cup"></div>
+  </div>
+  <div class="res-grid">
+    <form class="card" id="res-form" novalidate>
+      <h2><i data-lucide="calendar"></i>Reservation Details</h2>
+      <div class="grid2">
+        <label class="fld"><span>Full Name</span><div class="field"><input type="text" name="name" placeholder="Enter your full name" required autocomplete="name"><i data-lucide="user"></i></div></label>
+        <label class="fld"><span>Email Address</span><div class="field"><input type="email" name="email" placeholder="Enter your email address" required autocomplete="email"><i data-lucide="mail"></i></div></label>
+      </div>
+      <label class="fld"><span>Phone Number</span><div class="field"><input type="tel" name="phone" placeholder="Enter your phone number" required autocomplete="tel"><i data-lucide="phone"></i></div></label>
+      <div class="grid3">
+        <label class="fld"><span>Date</span><div class="field"><input type="date" name="date" id="date" required><i data-lucide="calendar"></i></div></label>
+        <label class="fld"><span>Time</span><div class="field"><input type="time" name="time" required><i data-lucide="clock"></i></div></label>
+        <label class="fld"><span>Party Size</span><div class="field"><select name="guests" required><option value="" disabled selected>Guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select><i data-lucide="users"></i></div></label>
+      </div>
+      <label class="fld"><span>Special Requests (Optional)</span><textarea name="notes" rows="3" placeholder="Any special requests or notes?"></textarea></label>
+      <p class="msg" id="msg" role="status" aria-live="polite"></p>
+      <div class="form-btns"><button class="btn primary" type="submit">Submit Reservation</button><button class="btn quiet" type="reset">Reset</button></div>
+    </form>
+    <aside class="card info">
+      <h2><i data-lucide="info"></i>Reservation Info</h2>
+      <ul>
+        <li><span class="ic"><i data-lucide="map-pin"></i></span><div><h3>Location</h3><p>Sa kanto lang</p></div></li>
+        <li><span class="ic"><i data-lucide="clock"></i></span><div><h3>Opening Hours</h3><p>Mon - Fri: 10:00 AM - 10:00 PM<br>Sat - Sun: 9:00 AM - 11:00 PM</p></div></li>
+        <li><span class="ic"><i data-lucide="phone"></i></span><div><h3>Contact</h3><p>+63 992 475 6798<br>Johnzellesantos171@gmail.com</p></div></li>
+        <li><span class="ic"><i data-lucide="info"></i></span><div><h3>Please Note</h3><p>Reservations are held for 15 minutes past your booked time. Kindly inform us in advance for any changes.</p></div></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p class="follow">Follow us on Social media:</p>
+    <p class="legal"><span class="brand-s">Fanteasy</span> &copy; 2026 &bull; All rights reserved to Santos, Johnzelle L.</p>
+    <div class="legal-links"><button type="button" data-modal="Privacy Policy">Privacy Policy</button><button type="button" data-modal="Terms of Service">Terms of Service</button></div>
+    <div class="social"><a href="https://www.facebook.com/johnzelle.santos" target="_blank" rel="noopener" aria-label="Facebook"><i data-lucide="facebook"></i></a><a href="https://www.instagram.com/johnz_santos/" target="_blank" rel="noopener" aria-label="Instagram"><i data-lucide="instagram"></i></a></div>
+  </div>
+</footer>
+<dialog class="modal" id="modal"><h2 id="modal-title"></h2><p>Content has not been made yet since this is only for my finals requirement.</p><button class="btn primary" id="modal-close" type="button">Close</button></dialog>
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
